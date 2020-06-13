@@ -1,12 +1,17 @@
 {
-  "name": "@rinsuki/lz4-ts",
-  "version": "1.0.0",
-  "main": "dist/index.js",
-  "repository": "https://github.com/rinsuki/lz4-ts",
-  "author": "rinsuki <428rinsuki+git@gmail.com>",
-  "license": "BSD-3-Clause",
-  "private": false,
-  "devDependencies": {
-    "typescript": "^3.9.5"
-  }
+    "name": "@rinsuki/lz4-ts",
+    "version": "1.0.0",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "repository": "https://github.com/rinsuki/lz4-ts",
+    "author": "rinsuki <428rinsuki+git@gmail.com>",
+    "license": "BSD-3-Clause",
+    "private": false,
+    "scripts": {
+        "prepack": "yarn build",
+        "build": "tsc"
+    },
+    "devDependencies": {
+        "typescript": "^3.9.5"
+    }
 }
