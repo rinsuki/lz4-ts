@@ -63,7 +63,7 @@ function copy(
     si: number,
     len: number
 ): void {
-    dest.set(src.subarray(si, len), di);
+    dest.set(src.subarray(si, si + len), di);
 }
 
 export function calcUncompressedLen(src: Uint8Array): number {
