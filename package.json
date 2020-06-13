@@ -1,22 +1,12 @@
 {
-  "name": "lz4",
+  "name": "@rinsuki/lz4-ts",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.ts",
-  "dependencies": {},
-  "devDependencies": {
-    "superstatic": "^4.1.0",
-    "ts-loader": "^0.8.2",
-    "typescript": "^2.4.2",
-    "webpack": "^3.3.0"
-  },
-  "scripts": {
-    "build": "webpack --optimize-minimize",
-    "watch": "webpack --progress --colors --watch",
-    "start": "superstatic --port 10080 --debug true"
-  },
-  "repository": {},
-  "author": "oov",
+  "main": "dist/index.js",
+  "repository": "https://github.com/rinsuki/lz4-ts",
+  "author": "rinsuki <428rinsuki+git@gmail.com>",
   "license": "BSD-3-Clause",
-  "homepage": "https://github.com/oov/lz4-ts/"
+  "private": false,
+  "devDependencies": {
+    "typescript": "^3.9.5"
+  }
 }
