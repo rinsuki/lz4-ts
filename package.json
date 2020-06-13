@@ -6,7 +6,6 @@
     "repository": "https://github.com/rinsuki/lz4-ts",
     "author": "rinsuki <428rinsuki+git@gmail.com>",
     "license": "BSD-3-Clause",
-    "private": false,
     "scripts": {
         "prepack": "yarn build",
         "build": "tsc"
