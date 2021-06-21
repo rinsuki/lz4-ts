@@ -63,7 +63,14 @@ function copy(
     si: number,
     len: number
 ): void {
-    dest.set(src.subarray(si, si + len), di);
+    // traditional for loop is faster than Uint8Array#set if length is small (<20?)
+    if (len < 20) {
+        for (let i = 0; i<len; i++) {
+            dest[di + i] = src[si + i]
+        }
+    } else {
+        dest.set(src.subarray(si, si + len), di);
+    }
 }
 
 export function calcUncompressedLen(src: Uint8Array): number {
