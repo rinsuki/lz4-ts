@@ -12,5 +12,14 @@
     },
     "devDependencies": {
         "typescript": "^3.9.5"
-    }
+    },
+    "files": [
+        "src/*.ts",
+        "lib/*.js",
+        "lib/*.d.ts",
+        "LICENSE",
+        "README.md",
+        "tsconfig.json",
+        "yarn.lock"
+    ]
 }
